@@ -16,7 +16,7 @@ const deleteBookByIdHandler = (request, h) => {
 
   const response = h.response({
     status: "fail",
-    message: "Buku tidak ditemukan",
+    message: "Buku gagal dihapus. Id tidak ditemukan",
   });
   response.code(404);
   return response;
